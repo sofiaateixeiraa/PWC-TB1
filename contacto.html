@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Gonçalo Pereira" />
+    <title>Contacto - Umbrella Corp</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="images/umbrellacorporation-logo.png"
+      type="image/png"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-logo">
+        <img
+          src="images/umbrellacorporation-logo.png"
+          alt="Umbrella Corp Logo"
+          class="logo-img"
+        />
+        <span class="logo-text">UMBRELLA CORP</span>
+      </div>
+      <nav class="header-nav">
+        <a href="index.html" class="nav-link">HOME</a>
+        <a href="sobre.html" class="nav-link">SOBRE</a>
+        <a href="equipa.html" class="nav-link">EQUIPA</a>
+        <a href="projetos.html" class="nav-link">PROJETOS</a>
+        <a href="contacto.html" class="nav-link nav-link--active">CONTACTO</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <h1 class="page-title">Estabelecer <span>Contacto</span></h1>
+        <p class="page-subtitle">
+          Canal de Transmissão Seguro - Todas as Comunicações Monitorizadas
+        </p>
+      </section>
+
+      <div class="section-contact">
+        <!-- Form -->
+        <div class="contact-form-wrap">
+          <span class="form-title">// Iniciar transmissão segura</span>
+
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="nome">Nome</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  placeholder="Identificação completa"
+                  minlength="3"
+                  maxlength="50"
+                  required
+                />
+                <span class="form-error" id="nomeError"></span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email</label>
+                <input
+                  class="form-input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="canal@dominio.com"
+                  required
+                />
+                <span class="form-error" id="emailError"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="assunto">Assunto</label>
+                <select
+                  class="form-select"
+                  id="assunto"
+                  name="assunto"
+                  required
+                >
+                  <option value="">Selecionar canal</option>
+                  <option value="vendas">Vendas &amp; Consultas</option>
+                  <option value="suporte">Suporte Técnico</option>
+                  <option value="rh">Recursos Humanos</option>
+                  <option value="parceria">Oportunidades de Parceria</option>
+                  <option value="clearance">Pedido de Clearance</option>
+                  <option value="outro">Outro</option>
+                </select>
+                <span class="form-error" id="assuntoError"></span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="prioridade">Prioridade</label>
+                <select class="form-select" id="prioridade" name="prioridade">
+                  <option value="normal">Normal</option>
+                  <option value="alta">Alta</option>
+                  <option value="critica">Crítica</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="mensagem">Mensagem</label>
+              <textarea
+                class="form-textarea"
+                id="mensagem"
+                name="mensagem"
+                placeholder="Detalhe a sua solicitação. Todas as comunicações são registadas e monitorizadas pela Umbrella Security Division."
+                minlength="10"
+                maxlength="1000"
+                required
+              ></textarea>
+              <span class="form-error" id="mensagemError"></span>
+            </div>
+
+            <button type="submit" class="form-submit">
+              Transmitir Mensagem
+            </button>
+          </form>
+
+          <div class="form-success" id="formSuccess">
+            Transmissão recebida - será contactado por canais autorizados
+          </div>
+        </div>
+
+        <!-- Info panel -->
+        <div class="contact-info-panel">
+          <div class="contact-info-block">
+            <span class="contact-info-label">// Canais Operacionais</span>
+            <div class="contact-info-entry">
+              <span class="contact-info-key">Email Cifrado</span>
+              <span class="contact-info-val">secure@umbrella-corp.com</span>
+            </div>
+            <div class="contact-info-entry">
+              <span class="contact-info-key">Linha Segura</span>
+              <span class="contact-info-val">+1 (800) UMBRELLA</span>
+            </div>
+            <div class="contact-info-entry">
+              <span class="contact-info-key">Sede Europeia</span>
+              <span class="contact-info-val">Localização - Classificada</span>
+            </div>
+          </div>
+
+          <div class="contact-info-block">
+            <span class="contact-info-label">// Horário de Operações</span>
+            <div class="contact-info-entry">
+              <span class="contact-info-key">Seg — Sex</span>
+              <span class="contact-info-val">08:00 — 22:00 (UTC)</span>
+            </div>
+            <div class="contact-info-entry">
+              <span class="contact-info-key">Urgências</span>
+              <span class="contact-info-val">24h / 365 dias</span>
+            </div>
+            <div class="contact-info-entry">
+              <span class="contact-info-key">Resposta Estimada</span>
+              <span class="contact-info-val">72 horas úteis</span>
+            </div>
+          </div>
+
+          <div class="contact-info-block">
+            <span class="contact-info-label">// Departamentos</span>
+            <div class="contact-info-entry">
+              <span class="contact-info-key">Investigação &amp; Dev.</span>
+              <span class="contact-info-val">research@umbrella-corp.com</span>
+            </div>
+            <div class="contact-info-entry">
+              <span class="contact-info-key">Recursos Humanos</span>
+              <span class="contact-info-val">clearance@umbrella-corp.com</span>
+            </div>
+            <div class="contact-info-entry">
+              <span class="contact-info-key">Relações Externas</span>
+              <span class="contact-info-val">pr@umbrella-corp.com</span>
+            </div>
+          </div>
+
+          <div class="contact-warning-box">
+            <span class="contact-warning-title">// Aviso de Segurança</span>
+            <p class="contact-warning-text">
+              Todas as comunicações são registadas e analisadas pela Umbrella
+              Security Division. Tentativas de transmissão não autorizada ou
+              acesso a informação classificada serão investigadas e sujeitas a
+              ação legal imediata. A Umbrella Corporation reserva o direito de
+              monitorizar qualquer contacto estabelecido através deste canal.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-brand-row">
+            <img
+              src="images/umbrellacorporation-logo.png"
+              alt="Umbrella Corp Logo"
+              class="footer-logo"
+            />
+            <span class="footer-name">Umbrella</span>
+          </div>
+          <p class="footer-tagline">
+            "Our Business is Life Itself." Líder global em farmacêutica,
+            biotecnologia e investigação médica. Comprometida com um futuro mais
+            saudável.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-col-title">Empresa</span>
+          <ul class="footer-col-list">
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="equipa.html">A Nossa Equipa</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-col-title">Investigação</span>
+          <ul class="footer-col-list">
+            <li><a href="projetos.html">T-Virus Division</a></li>
+            <li><a href="projetos.html">G-Virus Program</a></li>
+            <li><a href="projetos.html">Nemesis Initiative</a></li>
+            <li><a href="projetos.html">Arklay Labs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-col-title">Legal</span>
+          <ul class="footer-col-list">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Classified Protocol</a></li>
+            <li><a href="#">NDA Compliance</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-inner">
+          <p class="footer-copy">
+            &copy; 1968 – 2026 Umbrella Corporation. All Rights Reserved.
+          </p>
+          <div class="footer-bottom-links">
+            <a href="#" class="footer-bottom-link">Privacy Policy</a>
+            <a href="#" class="footer-bottom-link">Secure Logout</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const form = document.getElementById("contactForm");
+      const successMsg = document.getElementById("formSuccess");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // Basic validation
+        let valid = true;
+
+        const nome = document.getElementById("nome");
+        const nomeErr = document.getElementById("nomeError");
+        if (nome.value.trim().length < 3) {
+          nomeErr.textContent = "// Mínimo de 3 caracteres obrigatório";
+          valid = false;
+        } else {
+          nomeErr.textContent = "";
+        }
+
+        const email = document.getElementById("email");
+        const emailErr = document.getElementById("emailError");
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) {
+          emailErr.textContent = "// Endereço de email inválido";
+          valid = false;
+        } else {
+          emailErr.textContent = "";
+        }
+
+        const assunto = document.getElementById("assunto");
+        const assuntoErr = document.getElementById("assuntoError");
+        if (!assunto.value) {
+          assuntoErr.textContent = "// Selecionar canal obrigatório";
+          valid = false;
+        } else {
+          assuntoErr.textContent = "";
+        }
+
+        const mensagem = document.getElementById("mensagem");
+        const mensagemErr = document.getElementById("mensagemError");
+        if (mensagem.value.trim().length < 10) {
+          mensagemErr.textContent =
+            "// Mensagem demasiado curta — mínimo 10 caracteres";
+          valid = false;
+        } else {
+          mensagemErr.textContent = "";
+        }
+
+        if (!valid) return;
+
+        form.reset();
+        successMsg.classList.add("visible");
+
+        setTimeout(function () {
+          successMsg.classList.remove("visible");
+        }, 4000);
+      });
+    </script>
+  </body>
+</html>
